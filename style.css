@@ -1,0 +1,37 @@
+/* This is how a comment is typed in CSS . Anything inside this code is NOT considered as usable code*/
+
+/* Styling The Main Division which contains five divisions as it's children */
+.main1{
+    display: flex; /* aligns the text into a line. Default value is row*/
+    flex-direction: column; /*aligns the elements from top to bottom*/
+    padding: 5%;
+    background-color: rgb(244, 244, 244);
+    text-align: center; /*aligns the elements in a div tag to align centrally*/
+}
+/* Main1 div which contains 5 other divisions has a default width of 100% of body as it is not mentioned*/
+/*fhnghnghnmghnghncvbcvbcvbcvbcvxcvxc /*
+/*Common Styling for 5 smaller divisions.*/
+.ptitle,.mems,.mem1,.mem2,.mem3,.mem4{
+    padding: 2%;
+    background-color: rgb(232, 232, 232);
+    margin: 0% 0% 2.5% 30%;   /* margin : margin-top-value marginrightvalue marginbotvalue marginleftvalue*/
+    border: 5px solid rgb(115, 114, 114);
+    border-radius: 5%; /*creates a rectangle with corners circlar with a radius of 5%*/ 
+    width: 40%; /* All the divisions are children of main1. all five smaller divs take 40% of main1(same as body in this case)*/
+}
+/* Specific styling for Divisions containing Team Member Name and Description*/
+.mem1,.mem2,.mem3,.mem4{
+    display: flex;
+    gap: 10%;
+}
+
+/*Selecting the H1 tag of Project Basic Idea Division and Team Member and changing the color of text to blue*/
+.ptitle h1,.mems h2{
+    color: blue;
+}
+
+/*CSS of mems gets overwritten from CSS value given in line 16 of CSS file.*/
+.mems {
+    background-color: inherit;  /*This enables mems to inherit background color of parent main1 which is greyish*/
+    border:none;
+}
